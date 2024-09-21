@@ -1,4 +1,4 @@
-grammar guava;
+grammar Guava;
 
 fragment OpSymbol
 : 'while'
