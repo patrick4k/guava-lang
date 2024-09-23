@@ -4,7 +4,7 @@
 #include <llvm/IR/Verifier.h>
 #include <llvm/Support/raw_ostream.h>
 
-#include "GuavaParserInclude.h"
+#include "parser/GuavaParserInclude.h"
 
 int main() {
     // 1. Initialize LLVM components

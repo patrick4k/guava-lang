@@ -19,7 +19,6 @@ add_subdirectory(antlr4-cpp-runtime)
 include_directories(
     gen/
     src/
-    src/parser/
 )
 
 add_executable(guava src/main.cpp
@@ -31,6 +30,10 @@ add_executable(guava src/main.cpp
     gen/GuavaListener.h
     gen/GuavaParser.cpp
     gen/GuavaParser.h
+    src/parser/ast/GuavaAst.cpp
+    src/parser/ast/GuavaAst.h
+    src/parser/engine/GuavaParserEngine.cpp
+    src/parser/engine/GuavaParserEngine.h
 )
 
 target_link_libraries(guava ${LLVM_LIBS})
