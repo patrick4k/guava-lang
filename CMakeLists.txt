@@ -15,8 +15,12 @@ llvm_map_components_to_libnames(LLVM_LIBS support core irreader)
 # ANTLR4 -----------------------------------------------------------
 add_subdirectory(antlr4-cpp-runtime)
 
-
 # GUAVA -----------------------------------------------------------
+include_directories(
+    gen/
+    src/
+)
+
 add_executable(guava src/main.cpp
     gen/GuavaBaseListener.cpp
     gen/GuavaBaseListener.h

@@ -13,3 +13,5 @@ CMakeUserPresets.json
 build/
 gen/
 grammar/.antlr
+cmake-build-debug/
+.idea/
